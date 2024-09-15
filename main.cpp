@@ -24,3 +24,8 @@ int main()
     std::cout << "Atlag: " << atlag << std::endl;
     return 0;
 }
+sadasdasd
+sad
+as
+da
+sda

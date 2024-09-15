@@ -4,21 +4,21 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[NELEMENTS];
-    std::cout << '1-100 ertekek duplazasa'
-    for (int i = 0;)
+    int *b = new int[NELEMENTS];                      // NELEMENTS helyett N_ELEMENTS
+    std::cout << '1-100 ertekek duplazasa'            // ' ' helyett " " és a sor végén ;
+    for (int i = 0;)                                  // for ciklusból hiányzik i < N_ELEMENTS; i++
     {
         b[i] = i * 2;
     }
-    for (int i = 0; i; i++)
+    for (int i = 0; i; i++)                           // for ciklusban i helyett i < N_ELEMENTS;
     {
-        std::cout << "Ertek:"
+        std::cout << "Ertek:"                         //sor végén ; hiányzik
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
     int atlag;
-    for (int i = 0; i < N_ELEMENTS, i++)
+    for (int i = 0; i < N_ELEMENTS, i++)              // N_ELEMENTS végén , helyett ;
     {
-        atlag += b[i]
+        atlag += b[i]                                 //sor végén ; hiányzik     
     }
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
